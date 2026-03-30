@@ -12,10 +12,12 @@
 		<p class="mb-2 text-xl font-light">{stack}</p>
 		<p class="mb-3 text-xl">{description}</p>
 		{#if repo}
-			<a href={repo} target="_blank" class="flex gap-2 underline"><FolderGit2 /> See the repo.</a>
+			<a rel="external" href={repo} target="_blank" class="flex gap-2 underline"
+				><FolderGit2 /> See the repo.</a
+			>
 		{/if}
 		{#if link}
-			<a href={link} target="_blank" class="flex gap-2 underline"
+			<a rel="external" href={link} target="_blank" class="flex gap-2 underline"
 				><SquareArrowOutUpRight /> See it in action!</a
 			>
 		{/if}

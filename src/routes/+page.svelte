@@ -127,7 +127,7 @@
 	<div class="my-6 ml-auto">
 		<p>Building projects with a <span class="bg-amber-300 font-black">purpose.</span></p>
 	</div>
-	{#each projects as project(project.title)}
+	{#each projects as project (project.title)}
 		<ProjectItem {...project} />
 	{/each}
 </section>
@@ -138,8 +138,10 @@
 		<p>Got an idea? Let's build it.</p>
 	</div>
 	<div class="flex justify-end gap-3">
-		<a href="https://linkedin.com/in/sjgonda" class="underline">linkedin</a>
-		<a href="https://github.com/SSGonda" class="underline">github</a>
-		<a href="mailto:stephenjgonda@gmail.com" class="underline">stephenjgonda@gmail.com</a>
+		<a href="https://linkedin.com/in/sjgonda" target="_blank" class="underline">linkedin</a>
+		<a href="https://github.com/SSGonda" target="_blank" class="underline">github</a>
+		<a href="mailto:stephenjgonda@gmail.com" target="_blank" class="underline"
+			>stephenjgonda@gmail.com</a
+		>
 	</div>
 </section>
